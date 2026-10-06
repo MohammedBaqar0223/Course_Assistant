@@ -1,4 +1,3 @@
-# Course_Assistant
 # 📚 RAG-Based Course Assistant
 
 A simple **Retrieval-Augmented Generation (RAG)** application that allows users to ask questions about course materials stored as PDF files.
