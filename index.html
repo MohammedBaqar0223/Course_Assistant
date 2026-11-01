@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="dot"></span>
+      <span>DCCN Course Assistant</span>
+    </div>
+    <div class="controls">
+      <select id="moduleFilter">
+        <option value="">All Modules</option>
+        <option value="3. DCCN Syllabus.pdf">Syllabus</option>
+        <option value="Mod1_DCCN.pdf">Module 1: Physical Layer</option>
+        <option value="Mod2_DCCN.pdf">Module 2: Data Link Layer</option>
+        <option value="Mod3_DCCN.pdf">Module 3: MAC & LANs</option>
+      </select>
+      <button class="clear-btn" id="clearBtn" type="button">Clear</button>
+    </div>
+  </header>
+
+  <main id="chat">
+    <div class="empty-state" id="emptyState">
+      <h2>Ask anything from your course notes</h2>
+      <p>Answers are grounded strictly in your indexed DCCN lecture slides and syllabus.</p>
+      <div class="suggestions">
+        <button class="chip" onclick="askSuggestion('What is the syllabus in Module 3?')">Module 3 syllabus</button>
+        <button class="chip" onclick="askSuggestion('Compare Stop-and-Wait and Sliding Window')">Stop-and-Wait vs Sliding Window</button>
+        <button class="chip" onclick="askSuggestion('Explain CSMA/CD vs CSMA/CA')">CSMA/CD vs CSMA/CA</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="input-wrap">
+    <form id="chatForm">
+      <input type="text" id="queryInput" placeholder="Ask a question..." autocomplete="off" required />
+      <button type="submit" id="sendBtn">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
