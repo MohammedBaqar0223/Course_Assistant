@@ -2,6 +2,7 @@
 
 A study assistant for **Data Communication and Computer Networks (DCCN)** that answers student questions **only from the professor-provided course PDFs**, and shows the exact file and page each answer came from.
 
+![Course assistant answering "Explain UDP"](screenshots/Screenshot 2026-11-01 183423.png)
 
 ---
 
