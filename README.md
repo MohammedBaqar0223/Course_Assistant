@@ -143,6 +143,7 @@ Open `http://localhost:[PORT]` in your browser.
 
 - Hybrid search (keyword + semantic) and reranking
 - Evaluation set to track retrieval quality
+- Access to diagrams and responds in different forms such tabular form and diagramatic form.
 - Support for more subjects and previous-year question papers
 - Feedback buttons (thumbs up/down) on answers
 
